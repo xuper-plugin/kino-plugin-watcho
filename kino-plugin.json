@@ -1,0 +1,57 @@
+{
+  "id": "watcho",
+  "name": "WATCHO",
+  "version": "1.0.0",
+  "apiVersion": 9,
+  "entry": "plugin.js",
+  "icon": "icon.png",
+  "description": "Películas, series y anime de Netflix, HBO Max, Disney+, Prime Video y Apple TV+. Los catálogos se actualizan solos desde el add-on de WATCHO, sin configurar nada.",
+  "author": "xuper-plugin",
+  "hosts": [
+    "watcho3.rafaelzioneverest.workers.dev"
+  ],
+  "capabilities": [
+    "search",
+    "home",
+    "browse",
+    "episodes",
+    "resolve",
+    "scopedSearch"
+  ],
+  "streamHosts": "any",
+  "fetchHosts": "any",
+  "discoverable": false,
+  "categories": [
+    "movies",
+    "series",
+    "anime"
+  ],
+  "color": "#E50914",
+  "section": {
+    "label": "WATCHO",
+    "labelEn": "WATCHO"
+  },
+  "theme": {
+    "accent": "#E50914",
+    "onAccent": "#FFFFFF",
+    "background": "#0A0A0A",
+    "surface": "#141414",
+    "highlight": "#FF8080"
+  },
+  "settings": [
+    {
+      "key": "info",
+      "type": "status",
+      "label": "Estado",
+      "labelEn": "Status"
+    },
+    {
+      "key": "clearCache",
+      "type": "action",
+      "label": "Vaciar caché",
+      "labelEn": "Clear cache",
+      "confirm": "¿Vaciar la caché de listas?",
+      "confirmEn": "Clear the list cache?"
+    }
+  ]
+}
